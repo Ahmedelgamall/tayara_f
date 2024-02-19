@@ -1,0 +1,299 @@
+.about-us{
+
+    .first-banner{
+        // display: flex;
+        // justify-content: center;
+        // padding: 200px 60px;
+        // background-color: 	#fcf75e;
+        // background: linear-gradient(45deg, #fcf75e 0%, darken(#2195f31f, 50%) 100%);
+        // background-image: url("images/wallbaber.jpg");
+        // background-position: 50% 57%;
+    
+    
+        background-image: url("images/about-us-wb.jpg");
+    
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 70vh;
+   
+    
+        &::before{
+        content: "";
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        }
+        
+    
+    
+        .cont{
+          position: absolute;
+          top: 10%;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 10;
+
+          }
+    
+              h2{
+            text-align: center;
+            font-weight: 700;
+            font-size: 38px;
+            color: $darkColor;
+            font-family: 'Cairo', sans-serif;
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+        h5{
+            text-align: center;
+            margin: 30px 0;
+            font-size: 20px;
+            color: $mainColor;
+            font-family: 'Cairo', sans-serif;
+            font-family: 'Hind Siliguri', sans-serif;
+            animation-duration: 1s;
+            
+        }
+        .start-btn{
+            background-color: transparent;
+            color: $darkColor;
+            border: $darkColor 2px solid;
+            padding: 7px 20px;
+            margin-top: 15px;
+            transition: 0.6s ease;
+            z-index: 15;
+    
+            &:hover{
+                background-color: $darkColor;
+                color: white;
+                border-color: $darkColor;
+            }
+        }
+    
+    
+    }
+
+    .about-info{
+        .labels{
+            text-align: center;
+            margin-top: 100px;
+    
+
+            h2{
+                display: block;
+                color: $darkColor;
+                font-weight: 600;
+                font-size: 38px;
+                font-family: 'Hind Siliguri', sans-serif;
+
+
+            }
+            h4{
+                display: block;
+                color: $mainColor;
+                font-weight: 500;
+                font-size: 20px;
+                font-family: 'Hind Siliguri', sans-serif;
+            }
+        }
+
+        p{
+            margin-top: 30px;
+            font-size: 22px;
+            color: $brownColor;
+            text-align: center;
+
+            @media only screen and (max-width: 740px) {
+                font-size: 17px;
+              }
+        }
+
+        .services{
+            margin-top: 150px;
+            transition: 0.4s ease;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+            .service{
+                text-align: center;
+    
+                i{
+                    font-size: 34px;
+                    
+                }
+
+                h3{
+                    font-size: 22px;
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                    
+                }
+                p{
+                    font-size: 16px;
+                    color: $brownColor;
+                }
+            }
+        }
+    }
+
+
+    .about-us-counter{
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: $darkColor;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color: #ecebea;
+
+          
+            &::before {
+              content: "";
+              opacity: 1;
+              width: 100%;
+              height: 100%;
+              background-color: rgb(0, 0, 0);
+              position: relative;
+              left: 0;
+              top: 0;
+              z-index: 1;
+            }
+          
+            h2 {
+              text-align: center;
+              padding-top: 10px;
+              padding-bottom: 20px;
+              margin-bottom: 20px;
+              font-weight: 600;
+              font-size: 32px;
+              position: relative;
+              z-index: 10;
+              
+          
+            }
+          
+          
+          
+          
+            section#counter-stats {
+              display: flex;
+              justify-content: center;
+              margin-top: 30px;
+              margin-bottom: 30px;
+            }
+          
+            .stats {
+              text-align: center;
+              font-size: 35px;
+              font-weight: 700;
+              font-family: 'Montserrat', sans-serif;
+              @media only screen and (max-width: 740px) {
+                font-size: 20px;
+                margin-bottom: 20px;
+              }
+          
+              i {
+                color: $mainColor;
+                font-size: 60px;
+
+                @media only screen and (max-width: 740px) {
+                    font-size: 35px;
+                    margin-top: 20px;
+                  }
+              }
+            }
+          
+    }
+
+
+    .success{
+        margin-top: 40px;
+        direction: rtl;
+
+        img{
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+
+            @media only screen and (max-width: 742px) {
+                margin-top: 30px;
+              }
+        }
+
+        p{
+            color: $brownColor;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 20px;
+
+            @media only screen and (max-width: 1000px) {
+                font-size: 16px;
+              }
+        }
+        
+    }
+
+
+    .our-team{
+        margin-top: 150px;
+        margin-bottom: 60px;
+        .headers{
+            text-align: center;
+            margin-bottom: 40px;
+
+        }
+
+
+
+        .member{
+
+            &:hover{
+                background-color: $mainColor;
+                position: relative;
+            }
+
+
+            img{
+                width: 100%;
+                transition: 0.2s ease-in-out;
+
+                @media only screen and (max-width: 991px) {
+                    margin-top: 10px;
+                  }
+    
+
+    
+                &:hover{
+                    border: #212121 8px solid;
+                    opacity: 0.5; 
+                    
+                }
+            }
+        }
+
+        .label{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: 800;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+            transition: 2s ease;
+
+            h6{
+                font-size: 12px;
+            }
+
+        }
+        
+
+    }
+
+}

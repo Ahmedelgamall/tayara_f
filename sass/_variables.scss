@@ -1,0 +1,61 @@
+$mainColor: #ED610B;
+$brownColor: #726b5ee9;
+$darkColor: #262626;
+$lightColor: #e5e4e267;
+
+
+
+
+
+::selection {
+    color: #fff;
+    background: $darkColor;
+}
+
+.centering{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.brand-name{
+    color: $mainColor;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mainBtn{
+    box-shadow: none;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 1.42857;
+    border-radius: 4px;
+
+    margin-inline-start: 16px;
+    height: 52px;
+    border-radius: 8px;
+    line-height: 1.25;
+    font-size: 16px;
+    color: white;
+    background-color: $mainColor;
+    padding: 16px 37px !important;
+    transition: 0.4s ease;
+
+    &:hover{
+        opacity: 0.8;
+    }
+
+    @media only screen and (max-width: 740px) {
+        font-size: 12px;
+        height: 40px;
+        padding: 2px 18px !important;
+      }
+}
+

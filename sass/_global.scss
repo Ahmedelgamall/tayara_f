@@ -1,0 +1,214 @@
+body {
+  font-family: 'Cairo', sans-serif;
+}
+  .navbar{
+    
+      padding-left: 100px;
+      padding-right: 100px; 
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: $darkColor;
+      direction: rtl;
+
+      @media only screen and (max-width: 993px) {
+        padding: 2px 0;
+      }
+  
+      .navbar-toggler{
+        border: 1.5px $mainColor solid;
+        box-shadow: #ed620b2a 2px 2px 2px 2px;
+        font-size: 14px;
+      }
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+        .navbar-brand{
+          img{
+            height: 100%;
+            width: 140px;
+            object-fit: cover;
+
+            @media only screen and (max-width: 1040px) {
+              width: 100px;
+            }
+
+          }
+        }
+
+        .left-nav{
+
+          margin: 0 auto;
+        }
+
+        li{
+          a{
+              color: white;
+              font-size: 17px;
+              font-weight: 500;
+              transition: 0.4s ease;
+              &:hover{
+                  color: $mainColor;
+                  font-weight: 600;
+              }
+
+              @media only screen and (max-width: 1070px) {
+                font-size: 14px;
+              }
+
+              @media only screen and (max-width: 1014px) {
+                font-size: 13px;
+              }
+          }
+        }
+      .navbar-collapse{
+          justify-content: end;
+      }
+
+      .right-nav{
+          display: flex;
+          justify-content: end;
+          padding-right: 50px;
+          
+          @media only screen and (max-width: 993px) {
+            padding-right: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: inherit;
+          }
+          
+  
+          li{
+              padding: 0 10px;
+              font-size: 20px;
+              i{
+                  color: white;
+              }
+              
+          }
+      }
+
+  }
+
+
+  h2{
+    display: block;
+    color: $darkColor;
+    font-weight: 600;
+    font-size: 38px;
+    max-width: 85%;
+    margin: 11px auto;
+
+    @media only screen and (max-width: 900px) {
+      font-size: 32px;
+    }
+    @media only screen and (max-width: 700px) {
+      font-size: 26px;
+    }
+    @media only screen and (max-width: 500px) {
+      font-size: 23px;
+    }
+}
+
+h4{
+  display: block;
+  color: $mainColor;
+  font-weight: 500;
+  font-size: 20px;
+  @media only screen and (max-width: 760px) {
+    font-size: 18px;
+  }
+}
+
+  .first-footer{
+    background-color: $darkColor;
+    background-attachment: fixed;
+    margin-top: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    direction: rtl;
+
+    @media only screen and (max-width: 760px) {
+      padding-top: 20px;
+      padding-bottom: 50px;
+    }
+
+    .brand-name{
+
+      @media only screen and (max-width: 760px) {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+  
+    p{
+      color: $lightColor;
+    }
+    .social-icons{
+      color: $lightColor;
+      margin-top: 40px;
+
+      @media only screen and (max-width: 760px) {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+      }
+  
+      i{
+        padding: 10px;
+        margin: 0 5px;
+        color: $darkColor;
+        background-color: $lightColor;
+        border-radius: 50%;
+        aspect-ratio: 1;
+        transition: 0.4s ease;
+        z-index: 20;
+  
+        &:hover{
+          background-color: $mainColor;
+          cursor: pointer;
+        }
+      }
+    }
+  
+    .sec-col{
+
+
+      @media only screen and (max-width: 760px) {
+        margin-top: 35px;
+        text-align: center;
+      }
+
+  
+      h4{
+        color: $lightColor;
+        margin-bottom: 15px;
+        font-weight: 800;
+      }
+      a{
+        display: block;
+        color: $lightColor;
+        margin: 5px 0;
+        text-decoration: none;
+        transition: 0.4s ease;
+  
+        &:hover{
+          cursor: pointer;
+          color: $mainColor;
+        }
+      }
+    }
+  }
+  
+  .sec-footer{
+    background-color: #1d253c;
+  
+    h5{
+      font-size: 16px;
+      color: $lightColor;
+      padding: 20px 0;
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
